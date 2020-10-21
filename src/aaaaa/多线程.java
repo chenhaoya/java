@@ -2,7 +2,7 @@ package aaaaa;
 //什么是多线程：
 //随机执行
 /**
- * 多线程关键字在类名后加上：extends Thread
+ * 多线程关键字在类名后加上：extends
  * */
 public class 多线程 {
     public static void main(String[] args) {
