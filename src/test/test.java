@@ -1,15 +1,37 @@
 package test;
-/**
- * 目的：捕捉字符串中的某一位字符
- *       将其转换为Integer型并输出
- * */
+class Orc extends Villain{
+    private int orcNumber=111;
+    public Orc(String name,int orcNumber){
+        super(name);
+        this.orcNumber=orcNumber;
+    }
+    public void change(String name,int orcNumber){
+        setName(name);
+        this.orcNumber=orcNumber;
+    }
+    public String toString(){
+        return ("Orc:"+orcNumber+"\nVillain:"+super.toString());
+    }
+}
+class Villain{
+    private String name;
+    public Villain(String name){
+        this.name=name;
+    }
+    public String toString(){
+        return "Villain_name:"+name;
+    }
+    protected void setName(String name){
+        this.name=name;
+    }
+}
 public class test {
     public static void main(String[] args) {
-        String aa="0123456789";
-        int endNub=aa.length()-1;
-        char s=aa.charAt(endNub);
-        System.out.println("char:"+s+1);
-        System.out.println("INt :"+Integer.parseInt(String.valueOf(s))+1);
+        Orc nn=new Orc("ch",22);
+        System.out.println(nn);
+        nn.change("bb",111111);
+        System.out.println(nn);
     }
+
 }
 
