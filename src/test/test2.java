@@ -1,41 +1,38 @@
 package test;
-import java.util.Random;
+import java.util.*;
 public class test2 {
-    private static Random rand=new Random(47);
-    private String id;
-    public  test2(String id){
-        this.id=id;
+    int r;//行数
+    int c;//列数
+    int size;//woed长度
+    char []words;//word数组
+    private int[] ;
+
+    public boolean exist(char[][] board, String word) {
+        c=board[0].length;
+        r=board.length;
+        size=word.length();
+        words=word.toCharArray();
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                    if (board[i][j] == words[0] && match(board, 0, i, j))
+                        return true;
+            }
+        }
+        return false;
     }
-    private final int valueOne=19;
-    private static final int VALUE_TWO=29;
-    public static final int VALUE_THREE=39;
-    private final int i4=rand.nextInt(20);
-    static final int i5=rand.nextInt(20);
-    private Value v1=new Value(11);
-    private final Value v2=new Value(22);
-    private static final Value v3=new Value(33);
-    private static int[] a={1,2,3,4,5,6};
-    public String toString(){
-        return (
-        "private final int valueOne="+valueOne+
-         "\nprivate static final int VALUE_TWO="+VALUE_TWO+
-        "\npublic static final int VALUE_THREE="+VALUE_THREE+
-                "\nprivate final int i4="+i4+
-                "\nstatic final int i5="+i5+
-                "\nprivate Value v1="+v1+
-                "\nprivate final Value v2="+v2+
-                "\nprivate static final Value v3="+v3+
-                "\nprivate static int[] a="+a
-                );
+    public boolean match(char[][]board,int index,int x,int y){
+        if(index==size)
+            return true;
+        if(x<0||x>=r||y<0||y>=c||board[x][y]!=words[index]|| board[x][y] == '#')
+            return false;
+        char temp=board[x][y];
+        board[x][y]='#';
+        boolean asn=match(board,index+1,x+1,y)||match(board,index+1,x,y-1)||match(board,index+1,x,y+1)||match(board,index+1,x-1,y);
+        board[x][y]=temp;
+        return asn;
     }
-    public static void main(String[] args) {
-        test2 fd1=new test2("aa");
-        System.out.println(fd1.a);
-    }
-}
-class Value{
-    int i;
-    public Value(int i){
-        this.i=i;
+    public int removeDuplicates(int[] nums) {
+        String aa=nums.toString();
+        aa.l
     }
 }
