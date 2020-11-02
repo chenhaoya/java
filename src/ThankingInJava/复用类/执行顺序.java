@@ -1,5 +1,7 @@
 package ThankingInJava.复用类;
-
+/**
+ * https://editor.csdn.net/md/?articleId=109458534
+ * */
 public class 执行顺序 extends Insect {
     private int k=printInit("执行顺序k");
     public 执行顺序(){
