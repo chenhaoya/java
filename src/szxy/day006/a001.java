@@ -32,9 +32,9 @@ public class a001 {
         Animal  am=new Animal();
         Fish fs=new Fish(0);
         Dog dg=new Dog(4);
-        am=fs;
+        am=fs;//向上转型
         am.getLeg();
-        am=dg;
+        am=dg;//向上转型
         am.getLeg();
         fs.getLeg();;
         dg.getLeg();

@@ -13,6 +13,11 @@ public class a002 {
         p.order(t);
     }
 }
+class Person{
+    void order(Vehicle v){
+        v.start();
+    }
+}
 class Vehicle{
     void start(){
         System.out.println("start!");
@@ -26,10 +31,5 @@ class Car extends Vehicle{
 class  Truck extends Vehicle{
     void start(){
         System.out.println("卡车以80千米/小时的速度行驶");
-    }
-}
-class Person{
-    void order(Vehicle v){
-        v.start();
     }
 }
