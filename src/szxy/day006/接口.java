@@ -14,7 +14,7 @@ public class 接口 {
         mb.run();
     }
 }
-interface PCI{
+interface PCI{             //接口
     void setName(String s);//接口的定义都是抽象方法，没有方法体
     void run();
 }
