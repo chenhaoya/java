@@ -1,4 +1,7 @@
 package test;
+
+import java.util.Arrays;
+
 class Orc extends Villain{
     private int orcNumber=111;
     public Orc(String name,int orcNumber){
@@ -34,4 +37,5 @@ public class test {
     }
 
 }
+
 
