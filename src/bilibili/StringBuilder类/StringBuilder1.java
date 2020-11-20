@@ -1,4 +1,4 @@
-package bilibili;
+package bilibili.StringBuilder类;
 /**
  * 构造方法
  * StringBuilder();创建一个空字符缓冲区对象

@@ -1,4 +1,4 @@
-package bilibili.时间日历;
+package bilibili.Calender0;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -7,10 +7,10 @@ import java.util.Calendar;
 import java.util.Date;
 public class 总结 {
     public static void main(String[] args) throws ParseException {
-        //deom1();
-        deom2();
+        //demo1();
+        demo2();
     }
-    private static void deom2() {
+    private static void demo2() {
         Calendar c=Calendar.getInstance();//返回对象
         System.out.println(c.getTime());
         Date d=c.getTime();
@@ -18,7 +18,7 @@ public class 总结 {
         String time= sdf.format(d);
         System.out.println(time);
     }
-    private static void deom1() throws ParseException {
+    private static void demo1() throws ParseException {
         Date d=new Date();
         DateFormat df=new SimpleDateFormat("yyyy年MM月dd日 hh时mm分ss秒");
         String s= df.format(d);
