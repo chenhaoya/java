@@ -19,16 +19,16 @@ public class SystemClass {
     private static void demo2() {
         int [] src={1,2,3,4,5};
         int [] dest={6,7,8,9,10};
-        System.arraycopy(src,0,dest,0,3 );
-        System.out.println(Arrays.toString(dest));
+        System.arraycopy(src,0,dest,0,3 );//function
+        System.out.println(Arrays.toString(dest));//function
     }
     private static void demo1() {
-        long s = System.currentTimeMillis();
+        long s = System.currentTimeMillis();//function
         for(int i=0;i<10000;i++){
             System.out.println(i);
         }
         System.out.println();
-        long e = System.currentTimeMillis();
+        long e = System.currentTimeMillis();//function
         System.out.println((e-s));
     }
 }

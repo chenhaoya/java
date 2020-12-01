@@ -4,21 +4,7 @@ package ThankingInJava.接口;
  * 描述：抽象类不可被实例化
  * */
 import java.util.*;
-class Music{
-     void tune(Instrument i){
-        i.play("Music");
-    }
-     void tuneAll(Instrument[] e){
-        for(Instrument i:e)
-            tune(i);
-    }
-}
-abstract class aaa{//测试实例化类
-    abstract void play();
-    void play(String s){
-        System.out.println(s);
-    }
-}
+
 public class 抽象002 {
     public static void main(String[] args) {
         Instrument[] orchestra={
@@ -32,6 +18,21 @@ public class 抽象002 {
         aa.tuneAll(orchestra);
         //aaa d=new aaa();                  //不可实例化
         //Instrument aaa=new Instrument() ; //不可实例化
+    }
+}
+class Music{
+    void tune(Instrument i){
+        i.play("Music");
+    }
+    void tuneAll(Instrument[] e){
+        for(Instrument i:e)
+            tune(i);
+    }
+}
+abstract class aaa{//测试实例化类
+    abstract void play();
+    void play(String s){
+        System.out.println(s);
     }
 }
 abstract class Instrument{
@@ -70,6 +71,7 @@ class Stringed extends Instrument{
     }
     String what(){
         return "Stringed";
+
     }
     void adjust(){
         System.out.println("Stringed.adjust");

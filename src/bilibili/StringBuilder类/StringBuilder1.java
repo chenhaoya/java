@@ -54,7 +54,7 @@ public class StringBuilder1 {
         String ss="String";
         StringBuilder sb=new StringBuilder(ss);//通过StringBuilder的构造方法将String转换为StringBuilder
         String aa=sb.toString();
-
     }
 }
+
 

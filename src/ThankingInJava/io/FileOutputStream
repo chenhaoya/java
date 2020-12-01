@@ -1,0 +1,20 @@
+java.io.FileOutputStream extends OutputStream
+FileOutputStream:文件字节输出流
+作用：把内存中的数据写入到硬盘的文件中
+构造方法摘要
+    FileOutputStream(File file)     创建一个向指定 File 对象表示的文件中写入数据的文件输出流。
+    FileOutputStream(String name)   创建一个向具有指定名称的文件中写入数据的输出文件流。
+    参数：写入数据的目的地
+        1.String name:目的地是一个文件的路径
+        2.File file:目的地是一个文件
+    构造方法的作用：
+        1.创建一个FileOutputString对象
+        2.会根据构造方法中传递的文件/文件路径，如果没有这个文件则创建这个文件
+        3.FileOutputString创建的对象指向这个文件
+    例：
+    FileOutputStream fos = new FileOutputStream("E:\\Java IDEA\\day01-code\\src\\ThankingInJava\\io\\test.txt");//fos指向这个文件没有则创建
+    fos.write(97);      //写97到fos指向的文件中
+    //这里转换为二进制存储
+    //如果write参数在0-127之间则会用ASCII翻译文件中的二进制
+
+    fos.close();        //关闭指向文件

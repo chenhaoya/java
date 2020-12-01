@@ -17,12 +17,17 @@ public class 接口 {
                 new Stringed1()
         };
         tuneAll(orchestra);
+        Instrument1 ccccc=new Stringed1();
+        ccccc.aaa("接口的默认方法实现，每一个实现类都可以调用");
     }
 }
 interface Instrument1{
     int VALUE=5;
     void play(String s);
     void adjust();
+    default void aaa(String s){//接口默认方法实现测试
+        System.out.println(s);
+    }
 }
 class Wind1 implements Instrument1{
     public void play(String s){
