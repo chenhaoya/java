@@ -15,7 +15,7 @@ class Instrument{
 }
 public class Wind extends Instrument {
     public static void main(String[] args) {
-        Wind flute =new Wind();
+        Wind flute = new Wind();
         Instrument.tune(flute);
     }
 }
