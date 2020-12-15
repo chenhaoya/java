@@ -17,5 +17,8 @@ public class test2 {
         Date date=new Date();
         System.out.println(date);
         System.out.println(date.getTime());
+        /**
+         *
+         */
     }
 }
