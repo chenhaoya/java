@@ -1,3 +1,4 @@
+
 package bilibili.异常;
 
 import java.util.Objects;
@@ -18,3 +19,4 @@ public class Objects合法性判断 {
         Objects.requireNonNull(obj,"参数为空");
     }
 }
+

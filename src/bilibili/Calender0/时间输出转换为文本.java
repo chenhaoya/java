@@ -11,7 +11,7 @@ import java.util.Date;
  * */
 public class 时间输出转换为文本 {
     public static void main(String[] args)  {
-       // demo1();
+        //demo1();
         demo2();
     }
     private static void demo2() {
@@ -20,7 +20,9 @@ public class 时间输出转换为文本 {
              * 将文本转换为时间 date.parse返回的是date
              * */
         try {
-            Date date1 = date.parse("2020年-11月-19日 23时:02分:16秒");
+            Date date1 = date.parse("2020年-2月-31日 23时:02分:16秒");
+            String ss=date.format(date1);
+            System.out.println(ss);
             System.out.println(date1);
         } catch (ParseException e) {
             e.printStackTrace();
